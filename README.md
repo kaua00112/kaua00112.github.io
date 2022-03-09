@@ -1,2 +1,2 @@
 # kaua00112.github.io
-ngngnxgn
+projeto de site mobile da minha loja utilizando apenas html e css.
