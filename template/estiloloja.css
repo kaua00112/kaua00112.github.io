@@ -11,6 +11,7 @@ body{
     height: 100%;
     background-color: rgb(223, 128, 223);    
 }
+
 .home{
     display: flex;
     width: 100%;
@@ -21,17 +22,15 @@ body{
     box-shadow:0px 0px 15px 0px #000000 ;
     justify-content: space-between;
     
-    
 }
 .boloicon{
     text-decoration: none;
+    position: relative;
+    right: 41%;
     height: 45px;
     width: 45px;
-    margin-top: 2px;
     border: 2px brown solid;
     border-radius: 22px;
-    position: relative;
-    right: 43%;
     background-color: white;
 }
 .home_img{
@@ -56,6 +55,7 @@ body{
     
 }
 .cardapio{
+    
     text-decoration: none;
     color: purple;
 }
@@ -73,27 +73,14 @@ body{
 }
 .title{
     display: flex;
-    justify-content: center;
     background-color: white;
     border: 5px solid brown;
     margin: auto;
     margin-top: 40px;
-    display: flex;
     height:170px;
     width: 170px;
     justify-content: center;
-    word-wrap: break-all;
-    font-size: 35px;
-    color: white;
-    font-family: 'Niramit';
-    letter-spacing: 2px;
-    line-height: 60px;
-    word-wrap: break-all;
-    text-shadow: 4px 3px 0px #7A7A7A;
     border-radius: 100%;
-    animation-name: title;
-    animation-duration: 0.4 s;
-    animation-iteration-count: infinite;
     
 }
 
@@ -170,6 +157,145 @@ footer{
     width: 100%;
     margin-top: 15px;
     color: white;
+}
+.logo-desktop{
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    border: 2px brown solid;
+    border-radius: 30px;
+    background-color: white;
+}
+.home-desktop{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    height: 500px;
+}
+.container1{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    height: 500px;
+}
+.container3{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    height: 500px;
+}
+.cake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    
+
+    
+}
+
+.description{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+.text{
+    height: 200px;
+    width: 400px;
+    word-wrap: break-word;
+}
+aside{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    
+}
+#menu-opener{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#menu-area {
+    
+    width:0px;
+    height:100vh;
+    background:#ccc;
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#555;
+    cursor:pointer;
+}
+#menu-area li:hover {
+    background:#DDD;
+}
+.menu-opened{
+    width: 200px !important;
+}
+
+@media (min-width: 600px) {
+    body{
+        background-color: white;
+    }
+    .menu{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .bolos{
+        display: none;
+    }
+    .boloicon{
+        display: none;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        box-shadow:0px 0px 15px 0px #000000 ;
+
+    }
+    
+}
+@media (max-width: 599px){
+    .container{
+        display: none;
+    }
+    .container1{
+        display: none;
+    }
+    .container3{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .logo-desktop{
+        display: none;
+    }
 }
 
 
