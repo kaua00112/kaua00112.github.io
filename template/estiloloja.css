@@ -15,18 +15,42 @@ body{
 .home{
     display: flex;
     width: 100%;
-    height: 50px;
-    background-color: purple;
+    height: 120px;
+    background: rgb(113,9,121);
+    background: linear-gradient(90deg, rgba(113,9,121,1) 35%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%);
     justify-content: center;
     align-items: center;
-    box-shadow:0px 0px 15px 0px #000000 ;
-    justify-content: space-between;
-    
+}
+.container-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    justify-content: space-around;
+}
+.home-options{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav li{
+    color: white;
+}
+nav a{
+    color: white;
+    padding: 35px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: rgb(211, 3, 211);
+}
+.wpp{
+    color: white;
+    word-wrap: break-word;
 }
 .boloicon{
     text-decoration: none;
-    position: relative;
-    right: 41%;
     height: 45px;
     width: 45px;
     border: 2px brown solid;
@@ -44,6 +68,7 @@ body{
     color: #ff7300;
     font-family: 'Niramit';
     position: relative;
+    position: fixed;
     left: 3%;
     width: 100px;
     height: 30px;
@@ -104,8 +129,6 @@ body{
     height: 260px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px ;
-
-    
 }
 .bolos p{
     font-family: 'Niramit';
@@ -195,9 +218,6 @@ footer{
     background-color: white;
     height: 100%;
     width: 100%;
-    
-
-    
 }
 
 .description{
@@ -214,46 +234,7 @@ footer{
     width: 400px;
     word-wrap: break-word;
 }
-aside{
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    
-}
-#menu-opener{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-#menu-area {
-    
-    width:0px;
-    height:100vh;
-    background:#ccc;
-    overflow-x:hidden;
-    overflow-y:auto;
-    transition: all ease .5s;
-}
-#menu-area ul, #menu-area li {
-    padding:0;
-    list-style:none;
-}
-#menu-area li {
-    display:block;
-    padding:10px;
-    color:#555;
-    cursor:pointer;
-}
-#menu-area li:hover {
-    background:#DDD;
-}
-.menu-opened{
-    width: 200px !important;
-}
+
 
 @media (min-width: 600px) {
     body{
@@ -274,11 +255,9 @@ aside{
     .home{
         display: flex;
         justify-content: center;
-        height: 70px;
-        box-shadow:0px 0px 15px 0px #000000 ;
-
+        height: 90px;
+        box-shadow: 1px 15px 10px -4px #000000;
     }
-    
 }
 @media (max-width: 599px){
     .container{
@@ -290,10 +269,17 @@ aside{
     .container3{
         display: none;
     }
-    aside{
+    .logo-desktop{
         display: none;
     }
-    .logo-desktop{
+    .home{
+        height: 70px;
+        
+    }
+    .container-home{
+        display: none;
+    }
+    .wpp{
         display: none;
     }
 }
